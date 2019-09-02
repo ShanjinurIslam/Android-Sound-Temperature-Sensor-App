@@ -124,7 +124,9 @@ int main(void)
 	Lcd4_Write_String("Welcome :-) ") ;
 	while(1)
 	{
-		/*while((UCSRA&(1<<RXC))==0) ;
+		/*
+		
+		while((UCSRA&(1<<RXC))==0) ; // this is receive.. send in 1 byte per message to correctly extract it
 		data = UDR ;
 		if(data=='1'){
 			Lcd4_Clear() ;
